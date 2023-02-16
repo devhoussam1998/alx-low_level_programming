@@ -1,7 +1,2 @@
 #!/bin/bash
-
-# Run the GCC compiler with the -E option, which only runs the preprocessor stage
-gcc -E $CFILE > c
-
-# The $CFILE variable specifies the input file for the preprocessor stage
-# The output of the preprocessor is redirected and saved to a file named "c"
+gcc $CFILE -E -o c
